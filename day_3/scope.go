@@ -35,7 +35,7 @@ var(
 
 func add(x int, y int){
 	z := x + y
-	fmt.Println("Sum: ",z)
+	fmt.Println("first value : ", x , "second value : ", y ,"Sum : ", z)
 }
 
 func main(){
@@ -50,5 +50,4 @@ func main(){
 	add(a,b) // 50
 	add(a,p) // 50
 	add(b,q) // 70
-	
 }
