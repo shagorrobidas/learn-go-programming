@@ -1,7 +1,14 @@
 package main
 
-func main(){
-	add(10, 20)
-	add(30, 40)
-	
+import (
+	"fmt"
+	"example.com/mathlib"
+)
+
+func main() {
+	// go mod init example.com command custome package
+	fmt.Println("Showing Custome package ")
+	mathlib.Add(10, 20)
+	mathlib.sum()
+
 }
