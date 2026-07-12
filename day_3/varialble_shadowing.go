@@ -19,5 +19,4 @@ func add(a int, b int) {
 
 func main() {
 	add(a, b)
-
 }
