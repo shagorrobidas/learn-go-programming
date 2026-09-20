@@ -14,6 +14,10 @@ func checkLogin(login Login) bool {
 	return false
 }
 
+func (login Login) CheckLoginDetails() bool {
+	return checkLogin(login)
+}
+
 func main() {
 	var login Login
 	
@@ -23,7 +27,7 @@ func main() {
 	fmt.Print("Enter your password: ")
 	fmt.Scanln(&login.Password)
 
-	if checkLogin(login) {
+	if login.CheckLoginDetails() {
 		fmt.Println("Login successful!")
 	} else {
 		fmt.Println("Invalid username or password.")
