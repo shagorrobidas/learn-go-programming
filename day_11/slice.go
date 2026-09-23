@@ -27,14 +27,23 @@ func main() {
 	// fmt.Println("Slice Length:", len(s))
 	// fmt.Println("Slice Capacity:", cap(s))
 
-	a := make([]int, 3, 5)
-	a[0] = 10
-	a[1] = 20
-	a[2] = 30	
-	fmt.Println("Slice elements:", a)
-	fmt.Println("Slice Length:", len(a))
-	fmt.Println("Slice Capacity:", cap(a))
-
+	// a := make([]int, 3, 5)
+	// a[0] = 10
+	// a[1] = 20
+	// a[2] = 30	
+	// fmt.Println("Slice elements:", a)
+	// fmt.Println("Slice Length:", len(a))
+	// fmt.Println("Slice Capacity:", cap(a))
+    
+	var s []int // nil slice
+	s = append(s, 10)
+	s = append(s, 20)
+	s = append(s, 30)
+	s = append(s, 40)
+	s = append(s, 50)
+	fmt.Println("Slice elements:", s)
+	fmt.Println("Slice Length:", len(s))
+	fmt.Println("Slice Capacity:", cap(s))
 
 }
 
@@ -44,6 +53,7 @@ func main() {
 3. slice literal
 4. make function with len
 5. make function with len and cap
+6. empty or nil slice
 
 
 
