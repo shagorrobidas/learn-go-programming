@@ -41,9 +41,15 @@ func main() {
 	s = append(s, 30)
 	s = append(s, 40)
 	s = append(s, 50)
+	s = append(s, 60, 70, 80, 90, 100)
 	fmt.Println("Slice elements:", s)
 	fmt.Println("Slice Length:", len(s))
 	fmt.Println("Slice Capacity:", cap(s))
+
+	a := s[2:5]
+	fmt.Println("Slice elements:", a)
+	fmt.Println("Slice Length:", len(a))
+	fmt.Println("Slice Capacity:", cap(a))
 
 }
 
